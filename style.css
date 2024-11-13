@@ -11,11 +11,11 @@
 /* Hero Section */
 .hero-section {
     background-image: url('img/fisherman.png');
-    background-size: cover;
+    background-size: cover; /* Cover ensures the image fully covers the section */
     background-position: center;
-    height: 80vh;
+    height: 80vh;/*The hero section is taking up 80% of the entire screen height*/
     color: white;
-    background-attachment: fixed; /* Parallax effect */
+    background-attachment: fixed; /* keeps the background image fixed in place while I scroll the page (parallax scrolling effect.).*/
     position: relative;
 }
 
@@ -43,7 +43,7 @@
 
 .hero-section .btn-primary:hover {
     background-color: #4682B4;
-    transform: scale(1.1);
+    transform: scale(1.1);/* Slightly enlarging the button on hover for a nice effect */
 }
 
 /* Navbar */
@@ -85,7 +85,7 @@
 }
 
 .card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px);/* Hover effect that lifts the card up a bit */
 }
 
 .card-img-top {
@@ -123,7 +123,7 @@
 }
 
 /* Tours Section */
-.accordion-button {
+.accordion-button { /* accordion:allows users to toggle the visibility of its content by clicking on a heading or button. */
     font-size: 19px;
     background-color: #87CEEB;
     color: white;
@@ -144,12 +144,12 @@ form textarea {
     font-size: 16px;
     width: 100%;
     margin-bottom: 15px;
-    transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease;/* Smooth transition for border color change */
 }
 
 form input:focus,
 form textarea:focus {
-    border-color: #87CEEB;
+    border-color: #87CEEB;/* Border color turns blue when the field is focused */
 }
 
 form button {
@@ -192,22 +192,22 @@ footer a:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-section h1 {
-        font-size: 40px;
+        font-size: 40px;/* Smaller heading for mobile */
     }
 
     .hero-section p {
-        font-size: 16px;
+        font-size: 16px;/* Smaller text for mobile */
     }
 
     .navbar-nav .nav-link {
-        font-size: 16px;
+        font-size: 16px;/* Slightly smaller links for mobile */
     }
 
     .card-title {
-        font-size: 20px;
+        font-size: 20px;/* Smaller card titles for mobile */
     }
 
     .card-body {
-        font-size: 14px;
+        font-size: 14px;/* Smaller card body text for mobile */
     }
 }
