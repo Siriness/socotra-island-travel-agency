@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Socotra Island Travel Agency</title>
+    <!--Inline CSS for Hero Section Background --> 
+    <style>
+    .hero-section {
+    background-image: url('img/fisherman.png'); /* my hero image */
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    }
+</style>
+</head>
+<body>
+    
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+    <img src="img/Pink_Cute_Simple_island_Logo.png" alt="Socotra Island Logo" width="50"> <!-- my logo  -->
+    Socotra Island
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Tours</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+    </ul>
+    </div>
+</nav>
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+    <h1>Discover the Beauty of Socotra Island</h1>
+    <p>Embark on a journey to one of the most unique destinations in the world.</p>
+    <a href="#" class="btn btn-primary btn-lg">Explore Now</a>
+    </div>
+</section>
+<!-- Destinations Section -->
+<section class="container my-5">
+    <h2 class="text-center mb-4">Our Top Destinations</h2>
+    <div class="row">
+    <!-- Destination 1 -->
+    <div class="col-md-4">
+        <div class="card">
+        <img src="img/beautifule 2 trees.jpg" class="card-img-top" alt="Destination 1" height="235px"> <!-- dragon blood tree -->
+        <div class="card-body">
+            <h5 class="card-title">Dragon Blood Trees</h5>
+            <p class="card-text">explore Socotra's Majestic Icon. Walk among the magical Dragon Blood Trees an unforgettable view that feels like stepping into another world..</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+        </div>
+    </div>
+    <!-- Destination 2 -->
+    <div class="col-md-4">
+        <div class="card">
+        <img src="img/happy stingray.jpg" class="card-img-top" alt="Destination 2" height="235px"> <!-- stingrays -->
+        <div class="card-body">
+            <h5 class="card-title">Stingray Diving Adventure</h5>
+            <p class="card-text">Embark on an unforgettable underwater journey, swimming among graceful stingrays in the crystal clear waters of Socotra an adventure for ocean lovers and divers alike.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+        </div>
+    </div>
+    <!-- Destination 3 -->
+    <div class="col-md-4">
+        <div class="card">
+        <img src="img/dolfins.jpeg" class="card-img-top" alt="Destination 3" height="235px"> <!-- dolfins -->
+        <div class="card-body">
+            <h5 class="card-title">Dolphin Boat Tour</h5>
+            <p class="card-text">Enjoy a scenic boat ride to witness playful dolphins in their natural habitat. A perfect family friendly experience that brings you up close to Socotra’s marine life.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+        </div>
+    </div>
+    </div>
+</section> 
+<!-- Tours Section -->
+<section class="container my-5">
+    <h2 class="text-center mb-4">Our Tours</h2>
+    <div id="toursAccordion" class="accordion">
+    <!-- Tour 1 -->
+    <div class="card">
+        <div class="card-header" id="tourOne">
+        <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Dragon Blood Trees
+
+            </button>
+        </h5>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="tourOne" data-parent="#toursAccordion">
+        <div class="card-body">
+            Walk among the magical Dragon Blood Trees an unforgettable view that feels like stepping into another world.<a href="#">View Details</a>
+        </div>
+        </div>
+    </div>
+    <!-- Tour 2 -->
+    <div class="card">
+        <div class="card-header" id="tourTwo">
+        <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Stingray Diving
+            </button>
+        </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="tourTwo" data-parent="#toursAccordion">
+        <div class="card-body">
+            Explore the clear waters and swim close to friendly stingrays a diving experience you won’t want to miss! <a href="#">View Details</a>
+        </div>
+        </div>
+    </div>
+    <!-- Tour 3 -->
+    <div class="card">
+        <div class="card-header" id="tourThree">
+        <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Dolphin Boat Tour
+            </button>
+        </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="tourThree" data-parent="#toursAccordion">
+        <div class="card-body">
+            Hop on a boat and watch playful dolphins up close,a fun and exciting trip for all ages. <a href="#">View Details</a>
+        </div>
+        </div>
+    </div>
+    </div>
+    </section>
+    <!-- Contact Form Section -->
+    <section class="container my-5">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <form>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Your Name">
+        </div>
+        <div class="form-group col-md-6">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Your Email">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="destination">Destination of Interest</label>
+        <input type="text" class="form-control" id="destination" placeholder="Enter your desired destination">
+    </div>
+    <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</section>
+<!-- Footer -->
+<footer class="bg-light text-center py-3">
+    <p>&copy; 2024 Socotra Island Travel Agency</p>
+    <p>
+    <a href="#"><img src="img/icons8-facebook-48.png" alt="Facebook" width="24"></a> <!-- Social media icons -->
+    <a href="#"><img src="img/icons8-x-logo-50.png" alt="Twitter" width="24"></a>
+    <a href="#"><img src="img/icons8-instagram-logo-48.png" alt="Instagram" width="24"></a>
+    </p>
+</footer>
+<!-- Bootstrap JS, Popper.js, and jQuery (interactive components) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
